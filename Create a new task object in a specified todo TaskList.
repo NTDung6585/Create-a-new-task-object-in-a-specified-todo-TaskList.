@@ -1,0 +1,20 @@
+@title Create a new task object in a specified todoTaskList.
+#The headers for the API request
+headers = {
+"Authorization': 'Bearer + token,
+"Content-Type": "application/json"
+}
+goods 'carrot'
+# shop list
+todoTaskListId = 'AAMKADY2NTIINJEzLWMzNjgtNDkwNC1hNTZkLTAzMzY3NjY5MmJIMgAuAAAAAAAPVmfX5IzLSZgeZyvP1o8IAQBQ4ckMDmYNTYcUetWt6WgXAABaHs1yAAA='
+task = {
+"title": f"(goods)"
+}
+# The URL for the API request
+# POST /users/{id userPrincipalName}/todo/lists/{todoTasklistId}/tasks
+api_url f'https://graph.microsoft.com/v1.0/users/{user_id}/todo/lists/(todoTaskListId}/tasks'
+
+#Make the API request
+response requests.post(api_url, headers-headers, data-json.dumps(task))
+print(response.json())
+print(f"---DONE---")
